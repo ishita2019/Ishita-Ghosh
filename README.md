@@ -21,3 +21,7 @@ I have prepared a list that contains all the URL's we have captured from 2020 Ja
 The major challenge I faced during this exercise is the time this program is taking to execute. Since I kept it simple, even though the script is working, it is taking almost 10 minues time for each URL in the WARC file for the only Janury 2020 archive. Given this timeline, it is not possible to gather more than 1000 such URLs but the method is a working method. 
 
 I have included the WARC file and the jupyter notebook I have been wokring with. 
+
+Assumptions:
+
+I asseumed that we need to find the whole word so "COVID" would match but "COVID's" would not, and same for 'economy'. Thus the pattern must search for word boundaries, so I use the "\b" word boundary pattern.
